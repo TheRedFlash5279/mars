@@ -136,6 +136,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 . . . . . . . . . . . . . . . . 
 `, mySprite, 100, 0)
     }
+    if (mySprite.vx == 0) {
+        projectile.destroy()
+    }
 })
 scene.onOverlapTile(SpriteKind.Projectile, myTiles.tile3, function (sprite, location) {
 	
