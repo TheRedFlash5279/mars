@@ -141,7 +141,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
 })
 scene.onOverlapTile(SpriteKind.Projectile, myTiles.tile3, function (sprite, location) {
-	
+    projectile.destroy(effects.ashes, 500)
 })
 let projectile: Sprite = null
 let mySprite: Sprite = null
